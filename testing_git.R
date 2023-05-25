@@ -7,10 +7,14 @@ library(ggplot2)
 # plot multiple traits for the three species
 levels(iris$Species)
 
+library(viridis)
 # new plot
 
-ggplot(data = iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
-  geom_boxplot()
+ggplot(data = iris, aes(x = Species, y = Sepal.Width, color = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  scale_color_viridis(discrete=TRUE)
+  
 
 
 # ugly plots
