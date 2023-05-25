@@ -7,6 +7,11 @@ library(ggplot2)
 # plot multiple traits for the three species
 levels(iris$Species)
 
+# new plot
+
+ggplot(data = iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+  geom_boxplot()
+
 
 # ugly plots
 par(mfrow=c(3,4)) 
