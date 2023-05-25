@@ -14,6 +14,11 @@ ggplot(data = iris, aes(x = Species, y = Sepal.Width, color = Species)) +
   geom_boxplot() +
   theme_classic() +
   scale_color_viridis(discrete=TRUE)
+
+ggplot(data = iris, aes(x = Species, y = Petal.Width, color = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  scale_color_viridis(discrete=TRUE)
   
 
 
